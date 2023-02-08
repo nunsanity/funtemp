@@ -23,6 +23,13 @@ func TestGetFunFacts(t *testing.T) {
 		{input: "sun", want: []Fact{
 			{Name: "Temperatur i Solens kjerne", Value: 15000000, TempType: "C"},
 			{Name: "Temperatur på ytre lav av solen", Value: 5778, TempType: "C"}}},
+		{input: "luna", want: []Fact{
+			{Name: "Temperatur på Månens overflate om natten", Value: -183, TempType: "C"},
+			{Name: "Temperatur på Månens overflate om dagen", Value: 106, TempType: "C"}}},
+		{input: "terra", want: []Fact{
+			{Name: "Høyeste temperatur målt på Jordens overflate", Value: 56.7, TempType: "C"},
+			{Name: "Laveste temperatur målt på Jordens overflate", Value: -89.4, TempType: "C"},
+			{Name: "Temperatur i Jordens indre kjerne", Value: 9392, TempType: "K"}}},
 	}
 
 	for _, tc := range tests {
