@@ -106,16 +106,17 @@ func main() {
 
 		fmt.Println(fahr, "°F er", conv.FarhenheitToKelvin(fahr), "K")
 	}
+
 	if isFlagPassed("funfacts") && isFlagPassed("t") {
 		for _, fact := range funfacts.GetFunFacts(ffacts) {
 			if temptype == "C" && fact.TempType == "C" {
-				fmt.Println(fact.Name, fact.Value, fact.TempType)
+				fmt.Printf("%s %.2f %s \n", fact.Name, fact.Value, fact.TempType)
 			}
 			if temptype == "F" && fact.TempType == "F" {
-				fmt.Println(fact.Name, fact.Value, fact.TempType)
+				fmt.Printf("%s %.2f %s \n", fact.Name, fact.Value, fact.TempType)
 			}
 			if temptype == "K" && fact.TempType == "K" {
-				fmt.Println(fact.Name, fact.Value, fact.TempType)
+				fmt.Printf("%s %.2f %s \n", fact.Name, fact.Value, fact.TempType)
 			}
 			if temptype == "C" && fact.TempType == "F" {
 				fmt.Println(fact.Name, conv.FarhenheitToCelsius(fact.Value), temptype)
