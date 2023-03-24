@@ -3,8 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"macintosh_hd/Users/Nuns/is105/github.com/nunsanity/funtemp/funtemp/conv"
-	"macintosh_hd/Users/Nuns/is105/github.com/nunsanity/funtemp/funtemp/funfacts"
+
+	"github.com/nunsanity/funtemp/funtemp/conv"
+	"github.com/nunsanity/funtemp/funtemp/funfacts"
 )
 
 // Definerer flag-variablene i hoved-"scope"
